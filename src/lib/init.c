@@ -24,8 +24,8 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 #include "pflush.h"
 #include "stat.h"
 
-static void init() __attribute__((constructor));
-static void finalize() __attribute__((destructor));
+//static void init() __attribute__((constructor));
+//static void finalize() __attribute__((destructor));
 
 int set_process_local_rank();
 int unset_process_local_rank();

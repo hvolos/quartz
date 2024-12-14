@@ -268,7 +268,7 @@ __cconfig_init(config_t *cfg, const char *config_file)
 	
 	config_init(cfg);
 	if ((ret = config_read_file(cfg, config_file)) == CONFIG_FALSE) {
-        fprintf(stderr, "ERROR: nvmemul: Configuration file %s not found.\n", config_file);
+        fprintf(stderr, "ERROR: nvmemul: %s %d\n", config_error_text(cfg), config_error_line(cfg));
     }
     return ret;
 }
