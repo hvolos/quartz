@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>  
-
-void init();
-void finalize();
+#include <errno.h>
 
 void enable() {
     init();
 }
 
 void disable() {
+    init();
     finalize();
 }
 
